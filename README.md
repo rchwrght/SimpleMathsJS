@@ -1,3 +1,6 @@
+#SimpleMaths JS
+
+
 The idea of this repo is to offer to beginners a place to contribute simple mathematical functions.
 
 You will find the simplemaths.js file a list of basic functions, most of which are admitedly entirely redundant as JS comes with its own inbuilt functions for many of these cases.
