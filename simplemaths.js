@@ -12,6 +12,13 @@ function add(arr){
   return sum;
 };
 
+//Addution Closure
+function addClosure(a){
+	return function(b){
+		return a + b;
+	};
+}
+
 function subtraction(arr){
   var sum = arr[0];
   for(var i = 1; i < arr.length; i++){
@@ -20,6 +27,12 @@ function subtraction(arr){
   return sum;
 };
 
+//Subtraction Closure
+function subClosure(a){
+	return function(b){
+		return a - b;
+	};
+}
 
 function multiplication(arr){
   var sum = 1;
@@ -51,13 +64,44 @@ function toThePower (a,b){
   return sum;
 }
 
-//TODO create a squareRoot function, cubeRoot function, nth root
+//TODO create a nth root
 
-//TODO create a quadratic equation solver?? How would that look and work
+function squareRoot(num){
+	for(var i = 0; i < num/2; i++){
+		if(i * i === num){
+			return i;
+		}
+	}
+}
+
+function cubeRoot(num){
+	for(var i = 0; i < num/2; i++){
+		if(i*i*i === num){
+			return i;
+		}
+	}
+}
+
 
 //Geometry
 
+//Triangles
+
 function pythagoras (a, b){
   var hypotenuse = square(a) + square(b);
-  return Math.sqrt(hypotenuse);
+  return squareRoot(hypotenuse);
+}
+
+function triangleArea(height, base){
+	return height * base / 2;
+}
+
+//Circles
+
+function circleArea(radius){
+	return Math.PI * square(radius);
+}
+
+function circleCircumfrence(radius){
+	return 2 * Math.PI * radius;
 }
