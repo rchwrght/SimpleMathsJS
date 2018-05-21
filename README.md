@@ -1,4 +1,4 @@
-#SimpleMaths JS
+# SimpleMaths JS
 
 
 The idea of this repo is to offer to beginners a place to contribute simple mathematical functions.
