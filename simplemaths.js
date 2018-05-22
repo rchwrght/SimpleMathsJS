@@ -12,7 +12,7 @@ function add(arr){
   return sum;
 };
 
-//Addution Closure
+//Addition Closure
 function addClosure(a){
 	return function(b){
 		return a + b;
@@ -95,6 +95,11 @@ function pythagoras (a, b){
 function triangleArea(height, base){
 	return height * base / 2;
 }
+
+// function sine (opp, hyp){
+// 	var angle = (opp / hyp) * (Math.PI / 180);
+// 	return Math.sin(angle) ;
+// }
 
 //Circles
 
