@@ -110,3 +110,23 @@ function circleArea(radius){
 function circleCircumfrence(radius){
 	return 2 * Math.PI * radius;
 }
+
+//Factorial
+
+function factorial(num){
+	var result = 1;
+	for(var i = num; i > 0; i--){
+	    result *= i;
+	}
+	return result;
+}
+
+//Recursive Factorial
+
+function recursiveFactorial(num){
+	if(num === 1){
+		return 1;
+	} else {
+		return num * recursiveFactorial(num - 1);
+	}
+}
